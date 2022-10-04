@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    min-height: 120vh;
+    font-size: 1.6rem;
+    position: relative;
+    background-image: linear-gradient(#003601, #004201, #005b01, #006101, #005e01, #005d01);
+
+    .reset {
+        position: fixed;
+        top: 20px;
+        right: 50px;
+        background-color: #8e2a20;
+        border-radius: 5px;
+        color: #000(255, 255, 255, 0.7);
+        cursor: pointer;
+        padding: 5px 20px;
+
+    }
+}

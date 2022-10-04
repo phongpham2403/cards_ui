@@ -1,0 +1,112 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .card {
+        position: relative;
+    }
+
+
+    .card img:not(:first-child) {
+        position: relative;
+        width: 60px;
+        height: 90px;
+    }
+
+    // .card img:nth-child(2) {
+    //     animation: fadeRight 1s backwards;
+    // }
+   
+    @keyframes fadeRight {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 400px
+        }
+    }
+
+    .card img:first-child {
+        width: 60px;
+        height: 90px;
+        box-shadow: -3px 3px 3px #888888;
+        transition: transform ease-in 0.25s;
+        
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+
+    .deck {
+        height: 40px;
+        line-height: 40px;
+        font-weight: 600;
+        background-color: rgb(204, 204, 25);
+        padding: 0 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+        .deck_qty {
+            display: inline-block;
+            background-color: #fff;
+            min-width: 30px;
+            text-align: center;
+        }
+    }
+
+    .action {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn {
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+        padding: 5px 20px;
+
+
+        &:hover{
+        color: #ffffff;
+        animation: flashText 0.5s;
+        }
+        
+    
+        @keyframes flashText {
+            0% {
+                color: rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                color: transparent;
+            }
+            100% {
+                color: #fff;
+            }
+        }
+    }
+      
+
+    .shuffle {
+        background-color: #272727;
+        
+    }
+
+    .drawn {
+        background-color: #1e5d87;
+        margin: 0 20px;
+    }
+
+    .reveal {
+        background-color: #b66015;
+    }
+
+}

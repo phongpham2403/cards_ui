@@ -1,0 +1,24 @@
+.wrapper {
+    background-color: #fff;
+    display: none;
+    width: 60px;
+    height: 90px;
+    position: relative;
+    box-shadow: 5px 10px 18px #888888;
+    margin-right: 4px;
+    transition: transform ease-in 0.25s;
+    
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

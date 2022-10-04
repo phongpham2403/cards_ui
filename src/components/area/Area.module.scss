@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #deb887;
+    border: 2px solid #fff;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-radius: 30px;
+
+
+    .message {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;
+
+        span {
+            color: #fff;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 1.5s linear infinite;
+            display: inline-block;
+
+        }
+    }
+
+    @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+    }
+
+    .card_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+
+}
